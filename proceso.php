@@ -34,6 +34,9 @@ echo "<ul><li>".$plataform."</li></p>";
 echo "<li>".$tipoapli."</li>";
 echo "<li>".$lengpr."</li>";
 echo "<li>".$basedatos."</li></ul></div>";
+if ($plataform == "" || $tipoapli == "" || $lengpr == "" || $basedatos == "")  {
+    # code...
+}
 
  if ($plataform == "escritorio" && $tipoapli == "cliente-servidor" && $lengpr == "java" && $basedatos == "mysql") { 
     echo "<h1>La arquitectura recomendada para su aplicativo es:</h1>";
