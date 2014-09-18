@@ -35,8 +35,8 @@ echo "<li>".$tipoapli."</li>";
 echo "<li>".$lengpr."</li>";
 echo "<li>".$basedatos."</li></ul></div>";
 if ($plataform == "" || $tipoapli == "" || $lengpr == "" || $basedatos == "")  {
-    # code...
-}
+    echo "Verifique su selección";
+}else{
 
  if ($plataform == "escritorio" && $tipoapli == "cliente-servidor" && $lengpr == "java" && $basedatos == "mysql") { 
     echo "<h1>La arquitectura recomendada para su aplicativo es:</h1>";
@@ -72,6 +72,6 @@ if ($plataform == "" || $tipoapli == "" || $lengpr == "" || $basedatos == "")  {
    }   else{
    echo "<div id='noDisp'><div id='error'>!</div>En este momento no tenemos una arquitectura recomendada para su seleccion</div>";
    }
-   
+   }
    echo "<div id='ctrBtn'><div class='button'><a href='index.php'>Volver a la seleccion</a></div></div>";
 ?>
